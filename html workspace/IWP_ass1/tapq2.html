@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <pre>2. Create a page with JavaScript to do the following. These can all be on one
+            page.
+            (a) Prompt the user for their name.
+            (b) Use a pop-up box to welcome the user by name.
+            (c) Display the current date on the page in the following format:
+            April 30, 2018.
+            Do not display the time.
+            (d) Display the last modified date of the document.
+            (e) Put some useful advice, on any subject, in the status line of the browser
+            </pre>
+</body>
+<script type="text/javascript">
+    var name=prompt("Enter your name");
+    alert("User's name is " + name);
+    var today = new Date();
+    var res= today.toString().slice(4,10)+", "+today.toString().slice(11,15);
+    alert(res);
+    alert(document.lastModified);
+    window.status="This is the Current Status.";
+    alert(window.status);
+
+</script>
+</html>

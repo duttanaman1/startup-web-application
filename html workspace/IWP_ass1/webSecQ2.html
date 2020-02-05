@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+            function validate(){
+               var usr = document.getElementById("usr").value;
+               var pass = document.getElementById("pass").value;
+               if(usr==""){
+                   alert("Enter the username correctly");
+               }
+               else if (pass==""){
+                alert("Enter the password");
+                }
+                else if(!strng(pass)){
+                    alert("Enter Strong pass");
+                }
+                else{
+                    alert("Successful");
+                }
+                function strng(pass){
+                    var regexp =/(?=(?:[^A-Z]*[A-Z]){2})(?=(?:[^0-9]*[0-9]){2}).{8,}$/;
+                    return (regexp.test(pass));
+                }
+            }
+        </script>
+</head>
+<body>
+    <form>
+        Username: <input type="text" name="usr" id="usr" ><br>
+        Password:<input type="text" name="pass" id="pass" ><br>
+        <button onclick="validate()">Submit</button>
+    </form>
+    <ul>
+        <li><strong>Critera fro strong pass</strong></li>
+        <li>8 characters length</li>
+        <li>2 letters in Upper Case</li>
+        <li>1 Special Character (!@#$&*)</li>
+        <li>2 numerals (0-9)</li>
+        <li>3 letters in Lower Case</li>
+    </ul>
+</body>
+
+</html>

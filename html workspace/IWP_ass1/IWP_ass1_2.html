@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="IWP_ass1.css">
+
+</head>
+<body>
+        <div class="header">
+                <div class="logo">
+                   <a href="IWP_ass1.html"><font color="white"><center>Registration</center></font></a>
+                </div>
+        </div>
+        <div>
+            <div class="image-slider">
+                <img class="mySlides" src="Assests/img/1.jpg">
+                <img class="mySlides" src="Assests/img/2.jpg">
+                <img class="mySlides" src="Assests/img/3.jpg">
+                <img class="mySlides" src="Assests/img/4.jpg">
+                <img class="mySlides" src="Assests/img/5.jpg">
+            </div>
+            <div class="side" style="width:30%; float:right; padding-bottom:0px;margin-top:0px;margin-bottom: 0px; ">
+                <div class="login">
+                            <h2 style="color:rgb(255, 150, 52);font-size:28px">
+                                Already a User
+                                login here
+                            </h2>
+                            <table class="table">
+                            <form class="form-outer" method="POST">
+                                    <tr>
+                                            <td>
+                                                <label for='username'class="label">Username<font color='red' size=4px>*</font></label>:
+                                            </td>
+                                            <td>
+                                                <input type='email'name="username" placeholder='Username' class='input' style="width:15rem; border: none; border-bottom: 2px solid red;"><br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for='Password'class="label">Password<font color='red' size=4px>*</font></label>:
+                                            </td>
+                                            <td>
+                                                <input type='password' name="Password" placeholder='Password' class='input' style="width:15rem; border: none; border-bottom: 2px solid red;"><br>
+                                            </td>
+                                        
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2"><button id="login" class="btn">Login</button></td>
+                                        </tr>            
+            
+                            </form>
+                        </table>
+                </div>
+                <div class="about" style="height:auto; padding:0.5rem; margin-bottom:1rem;">
+                    <span style="color:rgb(150, 47, 0);font-size:28px">What we are Looking for!</span>
+                        <ul class="skills">
+                            <li><span>Creative thinking</span></li>
+                            <li><span>Determination</span></li>
+                            <li><span>Analytical thinking</span></li>
+                            <li><span>Dedication and enthusiasm</span></li>
+                        </ul>
+                </div>
+
+            </div> 
+        </div>
+        <div class="below">
+            <div class="about" style="width:96%; background-color: burlywood; align-content: center;height: auto;">
+                <h1 style="color:rgb(30, 4, 99);font-size:35px"><center>About</center></h1><hr>
+                <p style="color:rgb(30, 4, 99);">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores accusantium, esse, voluptates aut eos animi veritatis molestiae obcaecati iusto et, itaque dolore amet unde laborum natus odit enim non! Praesentium!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ab velit laudantium totam eum molestias dolorem nam mollitia, accusamus, illo quibusdam error nisi est, ex natus iure nostrum ad saepe?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, neque. Laboriosam, sequi atque perspiciatis necessitatibus, earum fugit iusto asperiores eum consequatur voluptates iure commodi libero nobis quae eligendi adipisci cum.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur amet tempore similique itaque expedita. Dolor sit facilis provident ab, cum eos eius assumenda minus ex aperiam ipsa voluptate, voluptatem rem?
+                    
+                </p>
+            </div>
+        </div> 
+        <div class="footer">
+                <ul class="footer-list">
+                <li><a href="#">About</a> |</li>
+                <li><a href="#">Blog</a> |</li>
+                <li><a href="#">FAQs</a> |</li>
+                <li><a href="#">Advertise With Us</a> |</li>
+                <li><a href="#">Recruitment Solutions</a> |</li>
+                <li><a href="#">Contact us</a></li>
+                </ul>
+                
+</body>
+<script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+</html>
+<!--            
+    -->

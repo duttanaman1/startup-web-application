@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <title>Budget</title>
+
+    <style>
+      table,
+      tr,
+      td {
+        border: 1px solid black;
+      }
+      body {
+        box-sizing: border-box;
+      }
+
+      .d-flex input {
+        margin: 0.9em 0em;
+      }
+
+      .d-flex button {
+        margin: 1.5em 0.6em;
+        padding: 0.3em 2.4em;
+      }
+
+      .d-flex table {
+        margin: 1em 10em;
+      }
+
+      table .btnedit {
+        color: lightgreen;
+        cursor: pointer;
+      }
+
+      table .btndelete {
+        color: tomato;
+        cursor: pointer;
+      }
+
+      /* messages */
+      .updatemsg,
+      .deletemsg,
+      .insertmsg {
+        position: absolute;
+        top: -40px;
+      }
+
+      .movedown {
+        animation: slideup 3.4s ease;
+      }
+
+      @keyframes slideup {
+        50% {
+          top: 0;
+        }
+
+        100% {
+          top: -40px;
+        }
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/css/nprogress.css" />
+  </head>
+  <body>
+    <div class="container center">
+      <h1 class="bg-light py-4 text-info text-center">
+        <i class="pe-7s-calculator"> </i> Budget
+      </h1>
+      <div
+        class="table d-flex table-data table-responsive"
+        style="margin-top: 3em;"
+      >
+        <table class="table table-borderless">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Raw/Product Name <i class="pe-7s-box2"></i></th>
+              <th scope="col">Debit <i class="fas fa-money-bill-alt"></i></th>
+              <th scope="col">Credit <i class="far fa-credit-card"></i></th>
+              <th scope="col">Balance <i class="fas fa-dollar-sign"></i></th>
+            </tr>
+          </thead>
+          <tbody class="table-striped table-hover">
+            <!--Here are the output-->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/nprogress.js"></script>
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js'></script>s -->
+    <script src="js/budget.js"></script>
+  </body>
+</html>

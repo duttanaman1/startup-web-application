@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+    margin: 0px;
+    background: rgb(0, 3, 32)
+}
+.header{
+    height: 3.5rem;
+    border-bottom: 4px solid #f16622;
+    background: #1b0101;
+}
+.logo{
+    width:10%;
+    height:1.25rem;
+    border:0.5px solid black;
+    padding: 20px;
+    margin-left:2rem;
+    background-color: rgb(236, 138, 9); 
+    font-size: 27px;
+}
+.logo:hover{
+    font-size: 30px; 
+
+}
+.form-outer{
+    margin-top: 0.75rem;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    
+    background-color: #fff4fe;
+    height:auto;
+    width:47rem;
+    padding:1.5rem;
+    display:inline-block;
+}
+.table{
+    margin: 20px;
+}
+.table td{
+    padding:0px 20px 0px 10px;
+    background-color:rgba(0, 0, 0, 0.005);
+    align-content: center;
+}
+.table td:nth-child(even){
+    
+    
+}
+.form{
+
+}
+.label{
+
+}
+.input{
+    padding: 12px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border-radius: 2px 2px 10px 10px;
+    width:20rem;
+    
+}
+.select{
+    background: white;
+    border: none;
+    font-size: 14px;
+    padding: 10px;
+    width: 268px;
+    box-sizing: border-box;
+    border-radius: 2px 2px 10px 10px;
+    border-top:1.5px solid grey;
+    border-left: 1.5px solid grey;
+    border-bottom: 1.5px solid rgb(182, 182, 182);
+    border-right:  1.5px solid rgb(182, 182, 182);
+    
+}
+.btn{
+    margin:30px 30px 10px 30px;
+    background-color: rgb(209, 101, 0);
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px;
+}
+.terms{
+    color:rgb(255, 123, 0);
+    font-size: 20px;
+}
+.terms:hover{
+    box-shadow: 0 10px 12px 0 rgba(0,0,0,0.24), 0 15px 40px 0 rgba(0,0,0,0.19);
+}
+.btn:disabled:hover{
+    margin:30px 30px 10px 30px;
+    background-color: rgb(119, 112, 106);
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px;
+}
+.btn:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color:  rgb(204, 145, 35);
+}
+
+.side{
+    margin-top: 0.75rem;
+    background-color: #fff4fe;
+    height:auto;
+    width:25rem;
+    padding:1.5rem;
+    
+    float: right;
+    margin-right:2rem;
+}
+.about{
+    background-color:rgb(197, 227, 255);
+    padding:1.5rem;
+    height:20rem;
+    width:22rem;
+    margin-right:0px;
+    display: inline-block;
+}
+.login{
+    background-color: #fff4fe;
+    width:25rem;
+    height:auto;
+    margin-bottom:2rem;
+    display:inline-block;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    
+
+}
+.below{
+    background-color: #004492;
+    width:96%;
+    margin-top:10px;
+    height:auto;
+    border-top:5px solid #f16622;
+    padding:10px 30px 5px 30px;
+
+}
+.skills{
+    list-style-type:none;
+    color: rgb(110, 9, 9);
+    font-size: 20px;
+    
+}
+.skills li{
+    padding: 5px;
+    margin: 1px;
+}
+.skills li:hover{
+    color: rgb(92, 5, 5);
+    font-size: 25px;
+    cursor: grabbing;
+}
+.image-slider{
+    display: inline-block;
+    width: 63%;
+    height:36rem;
+}
+.mySlides{
+    width:100%;
+    height: 100%;
+}
+.comment{
+    
+    background-color: rgb(197, 227, 255);
+    width:auto;
+    display:inline-block;
+    margin-top: 2rem;
+    padding: 1px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+.comment-input{
+    padding: 12px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border-radius: 2px 2px 10px 10px;
+    width:20rem;
+    height:8rem;
+     
+}
+.footer{
+    background-color: black;
+    width:100%;
+    height:3rem;
+    border-top:rgb(97, 96, 96);
+
+}
+.footer-list{
+    list-style-type: none;
+   
+    padding-top: 11px;
+    margin-bottom: 3px;
+    color: #004492;
+    
+}
+.footer-list li{
+    display: inline;
+    padding-left: 20px;
+    
+}
+.footer-list li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(158, 158, 158);
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+        </div>
+    </div>
+    <center>
+    <div class="form-outer">
+        <h1>Form Validation</h1><br>
+        <h3>SHivam Taparia<br>17BCE2377</h3>
+        <table class="table">
+            <form class="form" action="" method="post" name="info">
+            
+            <tr>
+                <td> 
+                    <label for='First name'class="label">First Name<font color='red' size=4px>*</font></label>:
+                </td>
+                <td>
+                    <input type='text' name="first_name" placeholder='First Name' class='input'><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='Last Name'class="label">Last Name<font color='red' size=4px>*</font></label>:
+                </td>
+                <td>
+                    <input type='text' name="last_name" placeholder='Last Name' class='input'><br>
+                </td>
+                </tr>
+            <tr>
+                <td>
+                    <label for='Email'class="label">Email<font color='red' size=4px>*</font></label>:
+                </td>
+                <td>
+                    <input type='email'name="email" placeholder='Email' class='input'><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='Password'class="label">Password<font color='red' size=4px>*</font></label>:
+                </td>
+                <td>
+                    <input type='password' name="password" placeholder='Password' class='input'><br>
+                </td>
+             </tr>
+             <tr>
+                <td>
+                    <label for='confirm_Password'class="label">Confirm Password<font color='red' size=4px>*</font></label>:
+                </td>
+                <td>
+                    <input type='password' name="confirm" placeholder='Confirm Password' class='input'><br>
+                </td>
+             </tr>
+            <tr>
+                 <td><label for='Mobile'class="label">Mobile<font color='red' size=4px>*</font></label>:</td>
+                 <td><input type="text" placeholder="+91" value="+91" class="input" style="width:30px;margin-right: 10px; padding: 12px 0px 10px 2px;">
+                    <input type='text' name="mobile" placeholder='Mobile' class='input'style="width:17.25rem"><br></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='DOB'class="label">Date Of Birth<font color='red' size=4px>*</font></label>:
+                </td>
+                <td>
+                    <input type='date' name="DOB" placeholder='Date Of Birth' class='input'>
+                </td>
+            </tr>
+            <tr>
+                <td><label for='sex'class="label">sex<font color='red' size=4px>*</font></label>:</td>
+                <td><input type="radio" name="sex" value="male"> Male<br>
+                    <input type="radio" name="sex" value="female"> Female<br>
+                    <input type="radio" name="sex" value="other"> Other<br> 
+                </td>
+            </tr>
+            <tr>
+                <td><label for='city'class="label">City<font color='red' size=4px>*</font></label>:</td>
+                <td>
+                    <input type="text" name="city" placeholder="city" class ="input">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='country'class="label">Country<font color='red' size=4px>*</font></label>:
+                </td>
+                <td>
+                    <input type='text' name="country" placeholder='country' class='input'><br>
+                </td>
+                </tr>
+            <tr>
+                <td><label for='pin'class="label">pin<font color='red' size=4px>*</font></label>:</td>
+                <td><input type="number" name="pin" placeholder='pincode' class='input'></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='State'class="label">State<font color='red' size=4px>*</font></label>:
+                </td>
+                <td>
+                    <input type='text' name="state" placeholder='State' class='input'><br>
+                </td>
+                </tr>
+            <tr>
+            <tr>
+                <td><label for='qualification'class="label">Highest qualification<font color='red' size=4px>*</font></label>:</td>
+                <td>
+                    <select class="select" placeholder="Select qualification" name="qualification">
+                        <option value="diploma">Diploma</option>
+                        <option value="Btech">B.E/B.Tech</option>
+                        <option value="MBA">MBA</option>
+                        <option value="Mtech">M.E./M.Tech</option>
+                        <option value="phd">phd</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for='qualification'class="label">Highest qualification<font color='red' size=4px>*</font></label>:</td>
+                <td><input type="file" class="input" id="file-id" accept=".docx,.pdf,.rtf,.doc" name="file" style="display: block;float: left; background: skyblue"><br>
+                    <p style="color:blue">Upload .docx,.pdf,.rtf,.doc file only</p></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center">
+                    <input type="checkbox" id="checkme"/>
+           
+            <a href="#" class="terms"> I have read terms and condition</a></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center; padding:0px 40px 0px 20px">
+                    <button class="btn" onclick="validatePersonalInfo(event);event.preventDefault();" id="blyat">Submit</button>
+                    <input type="reset" class="btn">
+                </td>
+            </tr>
+            </form>
+        </table>
+       
+    </div> 
+</center>   
+    <div class="footer">
+        <ul class="footer-list">
+        <li><a href="#">About</a> |</li>
+        <li><a href="#">Blog</a> |</li>
+        <li><a href="#">FAQs</a> |</li>
+        <li><a href="#">Advertise With Us</a> |</li>
+        <li><a href="#">Recruitment Solutions</a> |</li>
+        <li><a href="#">Contact us</a></li>
+        </ul>
+    </div>
+
+    <script type="text/javascript">
+    var chk = document.getElementById('checkme')
+var btn = document.getElementById('blyat')
+btn.disabled = true
+
+chk.onclick = function(){
+	btn.disabled = !btn.disabled
+}
+// alert('j')
+
+function validatePersonalInfo(event){
+
+    var _first = document.info.first_name.value;
+    var _last = document.info.last_name.value;
+    var _email = document.info.email.value; 
+	var _password=document.info.password.value;
+	var _confirm=document.info.confirm.value;
+    var _dob=document.info.DOB.value;
+    var _pin = document.info.pin.value;
+     var _mobile = document.info.mobile.value;
+    var _sex=document.info.sex.value;
+	var _city=document.info.city.value;
+	var _country=document.info.country.value;
+	var _state=document.info.state.value;
+	var _qualification=document.info.qualification.value;
+
+
+      
+	if(_first.toString() == ""){alert("Please enter a first name.");}
+	else if(!checkalpha(_first))
+	{
+		alert("enter Correct First name");
+	}
+	else if(_last.toString() == ""){alert("Please enter a last name.");}
+	else if(!checkalpha(_last))
+	{
+		alert("enter Correct last name");
+	}
+	else if(_email.toString() == ""){alert("Please enter your email.");}
+	else if(!checkemail(_email)){
+		alert("enter valid email")
+	}
+	else if(_password.toString() == ""){alert("Please enter your password.");}
+	else if(_confirm.toString() !=_password.toString()){alert("Please confirm your password.");}
+
+	else if(_mobile.toString() == ""){alert("Please enter your mobile number.");} 
+	else if(!checkmobile(_mobile)){
+	
+		alert("mobile number is invalid." + _mobile);
+	}
+	else if(_dob.toString() == ""){alert("Please enter your Date of Birth.");}
+	else if(_sex.toString() == ""){alert("Please enter your Gender.");}
+	else if(_city.toString() == ""){alert("Please enter your city.");}
+	else if(_country.toString() == ""){alert("Please enter your countyr.");}
+	else if(_pin.toString() == ""){alert("Please enter your pin.");}
+	else if(!checkpin()){
+    	alert("Invalid pin Code" + _pin);
+	}
+	else if(_state.length()>2)
+	{
+		alert("invalid state");
+	}
+	else if(_qualification.toString() == ""){alert("Please enter your qualification.");}
+
+
+
+
+    
+	
+	
+
+		function checkalpha(str){
+			var regexp=/^[a-zA-Z]+$/;
+			return regexp.test(str);
+		}
+		function eighteen() {
+			var Split = _dob.split("/");
+			if (parseInt(Split[2]) < 2001){
+				alert("You are not eligible for this");
+				return false;
+			}
+			
+		}
+        function checkemail(str){
+			var regexp=/^([\w\.\-]+){6,}@([\w\-]+)((\.(\w){2,3})+)$/;
+			return regexp.test(str);
+		}
+    	function checkmobile(str){
+			
+			var regexp = /^[0-9]{10}$/; 
+			return regexp.test(str);
+    	}
+		
+		function checkpin(length=6)
+    	{
+    		var pinEntry = document.info.pin.value;
+    		var pinNum = parseInt(pinEntry, 10);
+    		if (document.info.pin.value.length == length)
+    		{
+    			if(pinNum != 0 && isNaN(pinNum) == false){
+    			return true;
+    			}
+    			else
+    			{
+    				return false;
+    			}
+    		}
+    		else
+    		{
+    		return false;
+    		}
+		}
+	event.preventDefault()
+}
+
+    </script>
+</body>
+
+</html>

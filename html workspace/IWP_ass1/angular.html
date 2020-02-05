@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html data-ng-app="demo">
+  <head>
+    <script
+      data-require="angular.js@1.1.5"
+      data-semver="1.1.5"
+      src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css"
+    />
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+
+    <style>
+      .input11 {
+        padding: 12px 20px;
+        margin: 5px 0;
+        box-sizing: border-box;
+        border-radius: 2px 2px 10px 10px;
+        width: 20rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <center><h2>ANGULAR Application</h2></center>
+    </div>
+    <div>
+      The list is displayed below. You can add and delete list.<br /><br />
+    </div>
+    <div data-ng-controller="DemoController">
+      <table>
+        <tr data-ng-repeat="book in items">
+          <td>{{ book }}</td>
+          <td>
+            <div class="input-field" style="display:inline-block;">
+              <a
+                href="#"
+                data-ng-click="removeItem($index)"
+                class="btn wave-light"
+                >x</a
+              >
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <hr />
+
+      <input data-ng-model="newItem" class="input11" />
+      <div class="input-field" style="display:inline-block;">
+        <a href="#" data-ng-click="addItem(newItem)" class="btn wave-light"
+          >Add</a
+        >
+      </div>
+    </div>
+  </body>
+
+  <script>
+    "use strict";
+
+    var demo = angular.module("demo", []);
+
+    function DemoController($scope) {
+      $scope.items = [];
+
+      $scope.addItem = function(item) {
+        $scope.items.push(item);
+        $scope.newItem = null;
+      };
+
+      $scope.removeItem = function(index) {
+        $scope.items.splice(index, 1);
+      };
+    }
+  </script>
+</html>

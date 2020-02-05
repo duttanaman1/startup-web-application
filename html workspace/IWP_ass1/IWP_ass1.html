@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="IWP_ass1.css">
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+           <a href="IWP_ass1_2.html"><font color="white"><center>HOME</center></font></a>
+        </div>
+    </div>
+    <div class="form-outer">
+        <span style="color:rgb(255, 123, 0);font-size:28px">Looking For Job?</span><br>
+        Apply here and find thousands of jobs suitable for you.<br>
+        <table class="table">
+            <form class="form" action="" method="post" name="info">
+            
+            <tr>
+                <td> 
+                    <label for='First name'class="label">First Name<font color='red' size=4px>*</font></label>:
+                </td>
+                <td>
+                    <input type='text' name="first_name" placeholder='First Name' class='input'><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='Last Name'class="label">Last Name<font color='red' size=4px>*</font></label>:
+                </td>
+                <td>
+                    <input type='text' name="last_name" placeholder='Last Name' class='input'><br>
+                </td>
+                </tr>
+            <tr>
+                <td>
+                    <label for='Email'class="label">Email<font color='red' size=4px>*</font></label>:
+                </td>
+                <td>
+                    <input type='email'name="email" placeholder='Email' class='input'><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='Password'class="label">Password<font color='red' size=4px>*</font></label>:
+                </td>
+                <td>
+                    <input type='password' name="password" placeholder='Password' class='input'><br>
+                </td>
+             </tr>
+             <tr>
+                <td>
+                    <label for='confirm_Password'class="label">Confirm Password<font color='red' size=4px>*</font></label>:
+                </td>
+                <td>
+                    <input type='password' name="confirm" placeholder='Confirm Password' class='input'><br>
+                </td>
+             </tr>
+            <tr>
+                 <td><label for='Mobile'class="label">Mobile<font color='red' size=4px>*</font></label>:</td>
+                 <td><input type="text" placeholder="+91" value="+91" class="input" style="width:30px;margin-right: 10px; padding: 12px 0px 10px 2px;">
+                    <input type="text" name="mobile" placeholder='Mobile' class='input'style="width:17.25rem"><br></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='DOB'class="label">Date Of Birth<font color='red' size=4px>*</font></label>:
+                </td>
+                <td>
+                    <input type='date' name="DOB" placeholder='Date Of Birth' class='input'>
+                </td>
+            </tr>
+            <tr>
+                <td><label for='sex'class="label">sex<font color='red' size=4px>*</font></label>:</td>
+                <td><input type="radio" name="sex" value="male"> Male<br>
+                    <input type="radio" name="sex" value="female"> Female<br>
+                    <input type="radio" name="sex" value="other"> Other<br> 
+                </td>
+            </tr>
+            <tr>
+                <td><label for='city'class="label">City<font color='red' size=4px>*</font></label>:</td>
+                <td>
+                    <select class="select" placeholder="Select Current City" name="city">
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Ahmedabad">Ahmedabad</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Kolkata">Kolkata</option>
+                        <option value="Surat">Surat</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Jaipur">Jaipur</option>
+                        <option value="Lucknow">Lucknow</option>
+                        <option value="Kanpur">Kanpur</option>
+                        <option value="Nagpur">Nagpur</option>
+                        <option value="Visakhapatnam">Visakhapatnam</option>
+                        <option value="Indore">Indore</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='country'class="label">Country<font color='red' size=4px>*</font></label>:
+                </td>
+                <td>
+                    <input type='text' name="country" placeholder='country' class='input'><br>
+                </td>
+                </tr>
+            <tr>
+                <td><label for='pin'class="label">pin<font color='red' size=4px>*</font></label>:</td>
+                <td><input type="number" name="pin" placeholder='pincode' class='input'></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='State'class="label">State<font color='red' size=4px>*</font></label>:
+                </td>
+                <td>
+                    <input type='text' name="state" placeholder='State' class='input'><br>
+                </td>
+                </tr>
+            <tr>
+            <tr>
+                <td><label for='qualification'class="label">Highest qualification<font color='red' size=4px>*</font></label>:</td>
+                <td>
+                    <select class="select" placeholder="Select qualification" name="qualification">
+                        <option value="diploma">Diploma</option>
+                        <option value="Btech">B.E/B.Tech</option>
+                        <option value="MBA">MBA</option>
+                        <option value="Mtech">M.E./M.Tech</option>
+                        <option value="phd">phd</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for='qualification'class="label">Highest qualification<font color='red' size=4px>*</font></label>:</td>
+                <td><input type="file" class="input" id="file-id" accept=".docx,.pdf,.rtf,.doc" name="file" style="display: block;float: left; background: skyblue"><br>
+                    <p style="color:blue">Upload .docx,.pdf,.rtf,.doc file only</p></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center">
+                    <input type="checkbox" id="checkme"/>
+           
+            <a href="#" class="terms"> I have read terms and condition</a></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center; padding:0px 40px 0px 20px">
+                    <button class="btn" onclick="validatePersonalInfo(event);event.preventDefault();" id="blyat">Submit</button>
+                    <input type="reset" class="btn">
+                </td>
+            </tr>
+            </form>
+        </table>
+       
+    </div>
+    <div class="side">
+            <div class="about">
+                    <h2>JobPortal.com</h2>
+                    <hr>
+                    Due to the existence of multiple stakeholders with conflicting goals and policies, alterations to the existing Internet architecture are now limited to simple incremental updates;
+                    deployment of any new, radically different technology is next to impossible. To fend off this
+                    ossification, network virtualization has been propounded as a diversifying attribute of the
+                    future inter-networking paradigm. By introducing a plurality of heterogeneous network
+                    architectures cohabiting on a shared physical substrate, network virtualization promotes
+                    innovations and diversified applications. In this paper, we survey the existing technologies
+                    and a wide array of past and state-of-the-art projects on network.
+            </div>
+            <div class="comment">
+                <table>
+                   <caption><h2>Add a Comment</h2></caption>
+                   <tr>
+                       <td> <label for='name'class="label">Email</label>:</td>
+                        <td><input type='email'name="Email" placeholder='Email' class='input'><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for='comment'class="label">Comment</label>:</td>
+                        <td><input type="text" name="comment" placeholder="Add Your Comment" class= "comment-input"></br></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button id="comment-btn" class="btn">Submit</button></td>
+                    </tr>
+                </table>
+                </div>
+
+    </div>
+    
+    <div class="footer">
+        <ul class="footer-list">
+        <li><a href="#">About</a> |</li>
+        <li><a href="#">Blog</a> |</li>
+        <li><a href="#">FAQs</a> |</li>
+        <li><a href="#">Advertise With Us</a> |</li>
+        <li><a href="#">Recruitment Solutions</a> |</li>
+        <li><a href="#">Contact us</a></li>
+        </ul>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

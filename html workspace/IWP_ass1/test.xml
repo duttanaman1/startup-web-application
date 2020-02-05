@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE real-estate SYSTEM "test.dtd">
+<real-estate>
+    
+    <agencies>
+        <agency>
+            <name>Best properties in Delhi</name>
+            <address>
+                <street>5th avenue</street>
+                <postalCode>NY 62356</postalCode>
+                <state>Delhi</state>
+                <country>India</country>
+            </address>
+            <email>fakeid@gmail.com</email>
+            <phone>7339210265</phone>
+        </agency>
+    </agencies>
+    
+    <owners>
+        <owner>
+            <name>TATA Real estate</name>
+            <address>
+                <street>8th avenue</street>
+                <postalCode>23468</postalCode>
+                <state>delhi</state>
+                <country>India</country>
+            </address>
+        </owner>
+    </owners>
+    
+    <properties>
+        <property owner="TATA Real estate">
+            <name></name>
+            <address>
+                <street>14 26th avenue</street>
+                <state>Delhi</state>
+                <postalCode>23468</postalCode>
+            </address>
+            <description>
+                A total of 154 flats in 26 floors. There are 2 luxury apartments on the roof, with summer garden.
+                There is a security guard 24/7 in the reception. It's nearby a subway station, sea view. FBI around
+                the corner. Note especially the flat <flatReference flatName="A2601">A2601</flatReference>, which is
+                the best one we offer currently.
+            </description>
+            <numberOfFlats>154</numberOfFlats>
+            <features>
+                <feature>elevator</feature>
+                <feature>parking</feature>
+                <feature>security</feature>
+                <feature>sea view</feature>
+                <feature>subway</feature>
+                <feature>parking</feature>
+            </features>
+        </property>
+    </properties>
+    
+    <flats>
+        <flat property="jasminium">
+            <name>A1001</name>
+            <data>A small flat with no windows. Bedbugs included.</data>
+            <features/>
+        </flat>
+        <flat property="jasminium">
+            <name>A2601</name>
+            <data>
+                <description>Large suite with garden on the rooftop.</description>
+                Sea view, 200 sq meters.
+                <name>Splendid suite</name>
+            </data>
+            <features>
+                <feature>own elevator</feature>
+                <feature>garden</feature>
+                <feature>bath</feature>
+                <feature>2 bathrooms</feature>
+            </features>
+        </flat>
+    </flats>
+    
+</real-estate>

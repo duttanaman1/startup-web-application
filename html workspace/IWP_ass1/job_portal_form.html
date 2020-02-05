@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Job Portal</title>
+            <style>
+                body{
+                    margin:0px;
+                    background-color:grey;
+                }
+                   .label{
+                      color:rgb(187, 230, 247)
+                   }
+                   .signup{
+                    border: 0.05px solid black;
+                    background-color:rgb(78, 164, 185);
+                    
+                    display: inline-block;
+                    width:auto;
+                    padding:10px;
+                    
+                   }
+                   table td{
+                       padding:7px;
+                   }
+                   h1{
+                          text-align: center;
+                           }
+            </style>
+            <script src="index1.js"></script>
+    </head>
+  <body>
+    <marquee behavior="" direction="Left"> <b>Fill this Form!!!!!!!!!!!!</b></marquee>
+ <h1><ins>JOB PORTAL</ins></h1>
+ <center>
+ <div class="signup">
+<form name="info">
+<table>
+     <tr>
+         <td>
+            <label class="label">First Name:</label>
+         </td>
+         <td>
+            <input type="text" name="first_name" class="input" placeholder="Firstname" >
+         </td>
+     </tr>
+     <tr>
+        <td>
+            <label class="label">Last Name:</label>
+        </td>
+        <td>
+            <input type="text" name="last_name"  class="input" placeholder="Lastname">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label class="label">Mobile Number:</label>
+        </td>
+        <td>
+            <input type="code" name="+91" class="input" placeholder="+91" style="width:25px;">
+            <input type="text" name="mobile"  class="input" placeholder="Mobile Number">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label class="label">Zip:</label>
+        </td>
+        <td>
+            <input type="number" name="zip"  class="input" placeholder="Zip code">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label class="label">E-mail:</label>
+        </td>
+        <td>
+            <input type="email" name="email"  class="input" placeholder="Email">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label class="label">Password:</label>
+        </td>
+        <td>
+            <input type="Password" name="password"  class="input" placeholder="Password">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label class="label">Nationality</label>
+        </td>
+            <td>
+                    <select class="nationality">
+                            <option value="Indian">Indian</option>
+                            <option value="Russian">Russian</option>
+                            <option value="Nepalese">Nepalese</option>
+                            <option value="American">American</option>
+                            <option value="American">American</option>
+                            <option value="Canadien">Canadien</option>
+                            <option value="Mexican">Mexican</option>
+                            <option value="Australian">Australian</option>
+                            <option value="French">French</option>
+                            <option value="Chinese">Chinese</option>
+                            <option value="Srilankan">Srilankan</option>
+                            <option value="German">German</option>
+                            <option value="Brazilian">Brazilian</option>
+                            <option value="Others">Others</option>
+                          </select>
+            </td>
+        </tr>
+        <td>
+            <label class="label">Gender:</label>
+        </td>
+        <td>
+            <br> <input type="radio" name="gender"  class="input">male<br>
+            <input type="radio"  name="gender"  class="input">female<br>
+            <input type="radio"  name="gender"  class="input">others<br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label class="label">Details:</label>
+        </td>
+        <td>
+            <br>
+             <textarea name="Description" rows="10" cols="50"  class="input" placeholder="write your qualification"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label class="label">DOB</label>
+        </td>
+        <td>
+            <input type="date" name="dob"  class="input" placeholder="dob">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label class="label">User Id:</label>
+        </td>
+        <td>
+            <input type="text" name="user_id"  class="input" placeholder="User Id">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label class="label">Password:</label>
+        </td>
+        <td>
+            <input type="password"  name="password_user"  class="input" placeholder= "password">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label class="label">Sign Up:</label>
+        </td>
+        <td>
+            <button onclick="validatePersonalInfo()">Submit</button>
+            <input type="Reset" value="Reset">
+        </td>
+    </tr>
+</table>
+</form>
+</div>
+</center>
+</body>
+</html>
+
