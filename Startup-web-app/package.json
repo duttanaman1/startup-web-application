@@ -8,7 +8,7 @@
 		"dotenv": "^8.1.0",
 		"ejs": "^2.7.1",
 		"express": "^4.17.3",
-		"mongoose": "^5.7.5"
+		"mongoose": "^6.13.5"
 	},
 	"devDependencies": {
 		"eslint": "^6.4.0"
